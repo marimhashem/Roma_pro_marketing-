@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mariam Hashem Kamal — Roma Pro Marketing</title>
+<meta name="description" content="Mariam Hashem Kamal — Digital Marketing Specialist. Meta Ads, Social Media, Content & Paid Ads. مصر، السعودية، الخليج، USA وأستراليا.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#0f1560;
+  --blue2:#1a237e;
+  --blue3:#283593;
+  --cyan:#00c8e0;
+  --yellow:#FFD600;
+  --pink:#E91E8C;
+  --green:#00C853;
+  --orange:#FF9800;
+  --white:#fff;
+  --dark:#090b2e;
+  --dark2:#0e1040;
+  --dark3:#141852;
+  --gray:#8892b0;
+  --text:#ccd6f6;
+  --font-h:'Syne',sans-serif;
+  --font-b:'Tajawal',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);background:var(--dark);color:var(--text);overflow-x:hidden;direction:rtl}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--dark)}
+::-webkit-scrollbar-thumb{background:var(--yellow);border-radius:2px}
+
+/* NAV */
+nav{position:fixed;top:0;right:0;left:0;z-index:999;display:flex;align-items:center;justify-content:space-between;padding:16px 60px;background:rgba(9,11,46,.96);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,214,0,.1);transition:padding .3s}
+nav.sc{padding:10px 60px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;direction:ltr}
+.lcs{display:flex;gap:3px;direction:ltr;unicode-bidi:bidi-override}
+.lc{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-h);font-size:13px;font-weight:800;color:#000;flex-shrink:0}
+.lc.r{background:var(--cyan)}.lc.o{background:var(--orange)}.lc.m{background:var(--pink)}.lc.a{background:var(--green)}
+.logo-sub{font-family:var(--font-h);font-size:10px;font-weight:600;color:var(--gray);letter-spacing:.18em;text-transform:uppercase}
+.nl{display:flex;gap:28px;list-style:none}
+.nl a{font-size:13px;font-weight:500;color:var(--gray);text-decoration:none;transition:color .2s}
+.nl a:hover{color:var(--yellow)}
+.ncta{background:var(--yellow);color:#000!important;padding:8px 20px;border-radius:100px;font-weight:700!important}
+.ncta:hover{opacity:.88}
+.hbg{display:none;background:none;border:none;cursor:pointer;color:#fff;font-size:22px}
+.mob{display:none;position:fixed;inset:0;background:var(--dark2);z-index:1000;flex-direction:column;align-items:center;justify-content:center;gap:28px}
+.mob.open{display:flex}
+.mob a{font-size:22px;color:#fff;text-decoration:none;font-weight:600}
+.mob a:hover{color:var(--yellow)}
+.mclose{position:absolute;top:20px;left:24px;background:none;border:none;color:#fff;font-size:28px;cursor:pointer}
+
+/* HERO */
+#hero{min-height:100vh;display:flex;align-items:center;padding:130px 60px 80px;position:relative;overflow:hidden}
+.orb{position:absolute;border-radius:50%;pointer-events:none;filter:blur(90px)}
+.o1{width:600px;height:600px;top:-200px;left:-200px;background:rgba(26,35,126,.3)}
+.o2{width:400px;height:400px;bottom:-100px;right:-100px;background:rgba(0,200,224,.08)}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1fr 380px;gap:60px;align-items:center;width:100%;max-width:1200px;margin:0 auto}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,214,0,.1);border:1px solid rgba(255,214,0,.25);color:var(--yellow);padding:6px 16px;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:22px;animation:fu .5s ease both}
+.pulse{width:6px;height:6px;border-radius:50%;background:var(--yellow);animation:pl 2s infinite}
+@keyframes pl{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
+h1{font-family:var(--font-h);font-size:clamp(36px,5.5vw,70px);font-weight:800;color:#fff;line-height:1.04;margin-bottom:12px;animation:fu .5s .1s ease both}
+h1 .y{color:var(--yellow)}
+.role{font-size:16px;color:var(--cyan);font-weight:500;margin-bottom:18px;animation:fu .5s .15s ease both;letter-spacing:.02em}
+.bio{font-size:15px;color:var(--gray);line-height:1.85;font-weight:300;max-width:500px;margin-bottom:32px;animation:fu .5s .2s ease both}
+.btns{display:flex;gap:12px;flex-wrap:wrap;animation:fu .5s .25s ease both}
+.bm{background:var(--yellow);color:#000;padding:13px 28px;border-radius:100px;font-size:14px;font-weight:700;text-decoration:none;transition:transform .15s,opacity .2s;display:inline-block}
+.bm:hover{opacity:.9;transform:translateY(-2px)}
+.bg{border:1.5px solid rgba(255,214,0,.35);color:var(--yellow);padding:13px 28px;border-radius:100px;font-size:14px;font-weight:500;text-decoration:none;transition:all .2s;display:inline-block}
+.bg:hover{border-color:var(--yellow);background:rgba(255,214,0,.07);transform:translateY(-2px)}
+.hstats{display:flex;gap:28px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,.06);animation:fu .5s .3s ease both;flex-wrap:wrap}
+.hn{font-family:var(--font-h);font-size:32px;font-weight:800;color:var(--yellow);line-height:1}
+.hl{font-size:11px;color:var(--gray);margin-top:4px}
+/* hero side card */
+.hcard{animation:fu .7s .2s ease both}
+.hc-inner{background:rgba(20,24,82,.5);border:1px solid rgba(255,214,0,.15);border-radius:20px;padding:28px;backdrop-filter:blur(16px);position:relative;overflow:hidden}
+.hc-inner::before{content:'MH';position:absolute;bottom:-30px;left:-10px;font-family:var(--font-h);font-size:130px;font-weight:800;color:rgba(255,214,0,.04);line-height:1}
+.hc-photo{width:100%;aspect-ratio:3/4;background:linear-gradient(135deg,rgba(26,35,126,.6),rgba(9,11,46,.9));border-radius:14px;margin-bottom:18px;overflow:hidden;border:1px solid rgba(255,214,0,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.2);font-size:13px;text-align:center;padding:20px}
+.hc-name{font-family:var(--font-h);font-size:18px;font-weight:700;color:#fff;margin-bottom:4px}
+.hc-title{font-size:12px;color:var(--yellow);margin-bottom:14px}
+.hc-pills{display:flex;gap:6px;flex-wrap:wrap}
+.pill{background:rgba(255,214,0,.08);border:1px solid rgba(255,214,0,.2);color:var(--yellow);font-size:10px;font-weight:600;padding:3px 10px;border-radius:100px}
+.hc-mkt{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.mkt{font-size:11px;color:var(--gray);background:rgba(255,255,255,.05);padding:3px 8px;border-radius:5px}
+
+/* SECTION BASE */
+section{padding:92px 60px}
+.wrap{max-width:1200px;margin:0 auto}
+.slbl{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);font-weight:700;margin-bottom:12px}
+.slbl::before{content:'';width:18px;height:2px;background:var(--yellow);border-radius:1px}
+h2{font-family:var(--font-h);font-size:clamp(26px,4vw,46px);font-weight:800;color:#fff;line-height:1.1;margin-bottom:14px}
+.ssub{font-size:15px;color:var(--gray);line-height:1.8;font-weight:300;max-width:560px}
+
+/* CAMPAIGNS */
+#campaigns{background:var(--dark2)}
+.camp-tabs{display:flex;gap:4px;margin:32px 0 28px;flex-wrap:wrap;direction:ltr}
+.ctab{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);color:var(--gray);padding:8px 18px;border-radius:100px;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s}
+.ctab.active,.ctab:hover{background:rgba(255,214,0,.12);border-color:rgba(255,214,0,.35);color:var(--yellow)}
+/* كل نتيجة = card كبيرة + تقرير تحتها */
+.camp-item{margin-bottom:32px;display:none}
+.camp-item.show{display:block}
+.camp-card{background:var(--dark3);border:1px solid rgba(255,255,255,.08);border-radius:16px 16px 0 0;padding:28px;transition:border-color .2s}
+.camp-card:hover{border-color:rgba(255,214,0,.25)}
+.cc-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.cc-flag{font-size:28px}
+.cc-hinfo{}
+.cc-type{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);margin-bottom:4px}
+.cc-name{font-size:15px;font-weight:700;color:#fff;line-height:1.4}
+.cc-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:0}
+.cc-m{background:rgba(255,255,255,.04);border-radius:10px;padding:14px}
+.cc-val{font-family:var(--font-h);font-size:24px;font-weight:800;color:#fff;line-height:1}
+.cc-val .u{font-size:13px;color:var(--yellow)}
+.cc-key{font-size:10px;color:var(--gray);margin-top:4px;line-height:1.4}
+/* التقرير تحت الكارد */
+.cc-report{background:rgba(9,11,46,.8);border:1px solid rgba(255,214,0,.12);border-top:none;border-radius:0 0 16px 16px;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.cc-report-info{display:flex;gap:24px;flex-wrap:wrap}
+.cc-r-item{font-size:12px;color:var(--gray)}
+.cc-r-item strong{color:var(--yellow);font-size:13px}
+.verified{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;letter-spacing:.04em;background:rgba(0,200,83,.1);color:#00C853;padding:5px 12px;border-radius:100px;flex-shrink:0}
+
+/* SERVICES */
+#services{background:var(--dark)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.04);border-radius:18px;overflow:hidden;margin-top:48px}
+.svc{background:var(--dark);padding:32px 26px;transition:background .2s}
+.svc:hover{background:rgba(20,24,82,.7)}
+.svc-n{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--yellow);opacity:.6;margin-bottom:14px}
+.svc-ic{font-size:28px;margin-bottom:12px}
+.svc-t{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px}
+.svc-d{font-size:13px;color:var(--gray);line-height:1.7;font-weight:300}
+
+/* CERTS */
+#certs{background:var(--dark2)}
+.cert-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.cert-card{background:var(--dark3);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:24px 20px;text-align:center;transition:border-color .2s,transform .2s}
+.cert-card:hover{border-color:rgba(255,214,0,.3);transform:translateY(-3px)}
+.cert-ic{font-size:32px;margin-bottom:12px}
+.cert-org{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:8px}
+.cert-name{font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.4}
+.cert-year{font-size:11px;color:var(--gray)}
+
+/* ABOUT */
+#about{background:var(--dark)}
+.about-g{display:grid;grid-template-columns:400px 1fr;gap:64px;align-items:center}
+.aphoto{border-radius:18px;overflow:hidden;border:1px solid rgba(255,214,0,.15);aspect-ratio:3/4;background:rgba(20,24,82,.5);position:relative;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.2);font-size:13px;text-align:center;padding:20px}
+.aphoto-ov{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(9,11,46,.92));padding:20px}
+.abadge{display:inline-block;background:var(--yellow);color:#000;font-size:10px;font-weight:700;padding:4px 12px;border-radius:100px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.aname{font-family:var(--font-h);font-size:17px;font-weight:700;color:#fff}
+.atags{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 28px}
+.atag{background:rgba(255,214,0,.08);border:1px solid rgba(255,214,0,.2);color:var(--yellow);font-size:11px;font-weight:600;padding:5px 12px;border-radius:7px}
+.anums{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.anum{background:rgba(20,24,82,.5);border:1px solid rgba(255,255,255,.05);border-radius:10px;padding:18px;text-align:center}
+.av{font-family:var(--font-h);font-size:28px;font-weight:800;color:var(--yellow);line-height:1}
+.al{font-size:11px;color:var(--gray);margin-top:4px}
+
+/* CONTACT */
+#contact{background:var(--dark2)}
+.cbox{background:rgba(9,11,46,.7);border:1px solid rgba(255,214,0,.15);border-radius:22px;padding:64px 56px;text-align:center;position:relative;overflow:hidden;backdrop-filter:blur(16px)}
+.cbox::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 100%,rgba(26,35,126,.3) 0%,transparent 70%)}
+.cbox *{position:relative;z-index:1}
+.cbtns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:32px 0 40px}
+.bwa{background:#25D366;color:#fff;padding:13px 28px;border-radius:100px;font-size:14px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:opacity .2s,transform .15s}
+.bwa:hover{opacity:.9;transform:translateY(-2px)}
+.cinfo-g{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:660px;margin:0 auto}
+.ci{text-align:center}
+.ci-l{font-size:10px;color:rgba(136,146,176,.5);letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px}
+.ci-v{font-size:14px;color:#fff;font-weight:500}
+.ci-v a{color:var(--yellow);text-decoration:none}
+
+/* FOOTER */
+footer{background:rgba(9,11,46,.9);border-top:1px solid rgba(255,255,255,.05);padding:32px 60px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.fc{font-size:12px;color:rgba(136,146,176,.4)}
+.fl{display:flex;gap:20px}
+.fl a{font-size:12px;color:var(--gray);text-decoration:none;transition:color .2s}
+.fl a:hover{color:var(--yellow)}
+
+/* ANIM */
+@keyframes fu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.rev{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+.rev.vis{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .hero-in{grid-template-columns:1fr}
+  .hcard{display:none}
+  .about-g{grid-template-columns:1fr}
+  .aphoto{max-width:340px;margin:0 auto}
+  .camp-grid{grid-template-columns:1fr 1fr}
+  .cert-grid{grid-template-columns:1fr 1fr}
+  .svc-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  nav{padding:14px 20px}nav.sc{padding:10px 20px}
+  .nl{display:none}.hbg{display:block}
+  section{padding:72px 20px}
+  #hero{padding:110px 20px 60px}
+  .camp-grid{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr}
+  .cert-grid{grid-template-columns:1fr 1fr}
+  .cinfo-g{grid-template-columns:1fr}
+  .anums{grid-template-columns:1fr 1fr}
+  .cbox{padding:44px 20px}
+  footer{flex-direction:column;text-align:center;padding:28px 20px}
+  .fl{justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="logo">
+    <div class="lcs"><div class="lc r">R</div><div class="lc o">O</div><div class="lc m">M</div><div class="lc a">A</div></div>
+    <span class="logo-sub">Pro Marketing</span>
+  </a>
+  <ul class="nl">
+    <li><a href="#campaigns">الحملات</a></li>
+    <li><a href="#services">الخدمات</a></li>
+    <li><a href="#certs">الشهادات</a></li>
+    <li><a href="#about">عني</a></li>
+    <li><a href="#contact" class="ncta">تواصل معي</a></li>
+  </ul>
+  <button class="hbg" onclick="document.getElementById('mob').classList.add('open')">☰</button>
+</nav>
+
+<div class="mob" id="mob">
+  <button class="mclose" onclick="document.getElementById('mob').classList.remove('open')">✕</button>
+  <a href="#campaigns" onclick="document.getElementById('mob').classList.remove('open')">الحملات</a>
+  <a href="#services" onclick="document.getElementById('mob').classList.remove('open')">الخدمات</a>
+  <a href="#certs" onclick="document.getElementById('mob').classList.remove('open')">الشهادات</a>
+  <a href="#about" onclick="document.getElementById('mob').classList.remove('open')">عني</a>
+  <a href="#contact" onclick="document.getElementById('mob').classList.remove('open')" style="color:var(--yellow)">تواصل معي</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="orb o1"></div><div class="orb o2"></div>
+  <div class="hero-in">
+    <div>
+      <div class="badge"><span class="pulse"></span>Digital Marketing Specialist</div>
+      <h1>مريم هاشم<br><span class="y">كمال</span></h1>
+      <p class="role">Social Media · Content Creation · Meta Paid Ads · Influencer Marketing</p>
+      <p class="bio">خبيرة إعلانات ممولة وتسويق رقمي بخبرة +3 سنوات. أساعد العلامات التجارية على تحقيق نتائج حقيقية وقابلة للقياس — من الفكرة لحد أعلى عائد على الاستثمار. شغّلت حملات في مصر، السعودية، الخليج، USA وأستراليا.</p>
+      <div class="btns">
+        <a href="#contact" class="bm">هل أنتم مستعدون؟ تواصل معي</a>
+        <a href="#campaigns" class="bg">شوف النتائج</a>
+      </div>
+      <div class="hstats">
+        <div><div class="hn">3+</div><div class="hl">سنوات خبرة</div></div>
+        <div><div class="hn">5</div><div class="hl">أسواق دولية</div></div>
+        <div><div class="hn">4</div><div class="hl">شهادات معتمدة</div></div>
+        <div><div class="hn">$0.11</div><div class="hl">أقل تكلفة محادثة</div></div>
+      </div>
+    </div>
+    <div class="hcard">
+      <div class="hc-inner">
+        <div class="hc-photo">📸 أضيفي صورتك الشخصية هنا</div>
+        <div class="hc-name">Mariam Hashem Kamal</div>
+        <div class="hc-title">Digital Marketing Specialist — Roma Pro Marketing</div>
+        <div class="hc-pills">
+          <span class="pill">Meta Ads</span><span class="pill">Content</span>
+          <span class="pill">Paid Ads</span><span class="pill">Influencer</span>
+        </div>
+        <div class="hc-mkt">
+          <span class="mkt">🇪🇬 Egypt</span><span class="mkt">🇸🇦 Saudi</span>
+          <span class="mkt">🇺🇸 USA</span><span class="mkt">🇦🇺 Australia</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAMPAIGNS -->
+<section id="campaigns">
+  <div class="wrap">
+    <div class="rev">
+      <div class="slbl">نتائج حقيقية من Ads Manager</div>
+      <h2>Advertising Campaign Results 🔔</h2>
+      <p class="ssub">كل حملة اتنفذت بشكل كامل — استهداف، كريتيف، تحليل وتحسين. الأرقام من Ads Manager مباشرة.</p>
+    </div>
+    <div class="camp-tabs rev">
+      <button class="ctab active" onclick="filter('all',this)">الكل</button>
+      <button class="ctab" onclick="filter('sa',this)">🇸🇦 السعودية</button>
+      <button class="ctab" onclick="filter('us',this)">🇺🇸 USA</button>
+      <button class="ctab" onclick="filter('eg',this)">🇪🇬 مصر</button>
+      <button class="ctab" onclick="filter('au',this)">🇦🇺 أستراليا</button>
+    </div>
+
+    <div class="camps-list rev">
+
+      <!-- ═══ SAUDI 1 ═══ -->
+      <div class="camp-item show" data-country="sa">
+        <div class="camp-card">
+          <div class="cc-header">
+            <div class="cc-flag">🇸🇦</div>
+            <div class="cc-hinfo">
+              <div class="cc-type">Saudi Arabia — Messaging Campaign</div>
+              <div class="cc-name">New Engagement Campaign Saudi Arabia</div>
+            </div>
+          </div>
+          <div class="cc-metrics">
+            <div class="cc-m"><div class="cc-val">361<span class="u"> msg</span></div><div class="cc-key">Messaging Conversations Started</div></div>
+            <div class="cc-m"><div class="cc-val">$0.11</div><div class="cc-key">Cost per Conversation</div></div>
+            <div class="cc-m"><div class="cc-val">30,112</div><div class="cc-key">Reach</div></div>
+            <div class="cc-m"><div class="cc-val">47,123</div><div class="cc-key">Impressions</div></div>
+          </div>
+        </div>
+        <div class="cc-report">
+          <div class="cc-report-info">
+            <div class="cc-r-item">💰 Amount Spent: <strong>$39.50</strong></div>
+            <div class="cc-r-item">📅 Budget: <strong>$10/day</strong></div>
+            <div class="cc-r-item">📊 Objective: <strong>Messages</strong></div>
+            <div class="cc-r-item">🎯 Strong women engagement</div>
+          </div>
+          <span class="verified">✓ Ads Manager Verified</span>
+        </div>
+      </div>
+
+      <!-- ═══ SAUDI 2 ═══ -->
+      <div class="camp-item show" data-country="sa">
+        <div class="camp-card">
+          <div class="cc-header">
+            <div class="cc-flag">🇸🇦</div>
+            <div class="cc-hinfo">
+              <div class="cc-type">Saudi Arabia — Awareness Campaign</div>
+              <div class="cc-name">New Awareness Campaign Saudi Arabia</div>
+            </div>
+          </div>
+          <div class="cc-metrics">
+            <div class="cc-m"><div class="cc-val">102,593</div><div class="cc-key">Reach</div></div>
+            <div class="cc-m"><div class="cc-val">$0.073</div><div class="cc-key">Cost per 1,000 Reached</div></div>
+            <div class="cc-m"><div class="cc-val">102,593</div><div class="cc-key">Impressions</div></div>
+            <div class="cc-m"><div class="cc-val">$5<span class="u">/day</span></div><div class="cc-key">Daily Budget</div></div>
+          </div>
+        </div>
+        <div class="cc-report">
+          <div class="cc-report-info">
+            <div class="cc-r-item">💰 Amount Spent: <strong>$7.42 فقط</strong></div>
+            <div class="cc-r-item">📅 Budget: <strong>$5/day</strong></div>
+            <div class="cc-r-item">📊 Objective: <strong>Awareness</strong></div>
+            <div class="cc-r-item">📍 Platform: <strong>Facebook & Instagram</strong></div>
+          </div>
+          <span class="verified">✓ Ads Manager Verified</span>
+        </div>
+      </div>
+
+      <!-- ═══ USA 1 ═══ -->
+      <div class="camp-item show" data-country="us">
+        <div class="camp-card">
+          <div class="cc-header">
+            <div class="cc-flag">🇺🇸</div>
+            <div class="cc-hinfo">
+              <div class="cc-type">USA — Messaging Campaign</div>
+              <div class="cc-name">New Engagement Campaign messages for America</div>
+            </div>
+          </div>
+          <div class="cc-metrics">
+            <div class="cc-m"><div class="cc-val">56<span class="u"> msg</span></div><div class="cc-key">Messaging Conversations</div></div>
+            <div class="cc-m"><div class="cc-val">$1.26</div><div class="cc-key">Cost per Conversation</div></div>
+            <div class="cc-m"><div class="cc-val">5,153</div><div class="cc-key">Reach</div></div>
+            <div class="cc-m"><div class="cc-val">8,756</div><div class="cc-key">Impressions</div></div>
+          </div>
+        </div>
+        <div class="cc-report">
+          <div class="cc-report-info">
+            <div class="cc-r-item">💰 Amount Spent: <strong>$70.58</strong></div>
+            <div class="cc-r-item">📅 Budget: <strong>$20/day</strong></div>
+            <div class="cc-r-item">📊 Objective: <strong>Messages</strong></div>
+            <div class="cc-r-item">⏱ Duration: <strong>3 days</strong></div>
+          </div>
+          <span class="verified">✓ Ads Manager Verified</span>
+        </div>
+      </div>
+
+      <!-- ═══ USA 2 ═══ -->
+      <div class="camp-item show" data-country="us">
+        <div class="camp-card">
+          <div class="cc-header">
+            <div class="cc-flag">🇺🇸</div>
+            <div class="cc-hinfo">
+              <div class="cc-type">USA — Messaging Campaign (Active)</div>
+              <div class="cc-name">New Engagement Campaign messages for America — Active</div>
+            </div>
+          </div>
+          <div class="cc-metrics">
+            <div class="cc-m"><div class="cc-val">32<span class="u"> msg</span></div><div class="cc-key">Messaging Conversations</div></div>
+            <div class="cc-m"><div class="cc-val">$1.25</div><div class="cc-key">Cost per Conversation</div></div>
+            <div class="cc-m"><div class="cc-val">$152.47</div><div class="cc-key">Total Account Spent</div></div>
+            <div class="cc-m"><div class="cc-val">$0.25</div><div class="cc-key">CPM</div></div>
+          </div>
+        </div>
+        <div class="cc-report">
+          <div class="cc-report-info">
+            <div class="cc-r-item">💰 Campaign Spent: <strong>$40.04</strong></div>
+            <div class="cc-r-item">📊 Status: <strong>Active</strong></div>
+            <div class="cc-r-item">📍 Market: <strong>America</strong></div>
+          </div>
+          <span class="verified">✓ Ads Manager Verified</span>
+        </div>
+      </div>
+
+      <!-- ═══ EGY 1 ═══ -->
+      <div class="camp-item show" data-country="eg">
+        <div class="camp-card">
+          <div class="cc-header">
+            <div class="cc-flag">🇪🇬</div>
+            <div class="cc-hinfo">
+              <div class="cc-type">Egypt — Page Likes Campaign</div>
+              <div class="cc-name">New Engagement Campaign شيخ زايد واكتوبر</div>
+            </div>
+          </div>
+          <div class="cc-metrics">
+            <div class="cc-m"><div class="cc-val">1,640<span class="u"> like</span></div><div class="cc-key">Page Likes / Follows</div></div>
+            <div class="cc-m"><div class="cc-val">$0.00524</div><div class="cc-key">Cost per Like</div></div>
+            <div class="cc-m"><div class="cc-val">32,800</div><div class="cc-key">Reach</div></div>
+            <div class="cc-m"><div class="cc-val">37,753</div><div class="cc-key">Impressions</div></div>
+          </div>
+        </div>
+        <div class="cc-report">
+          <div class="cc-report-info">
+            <div class="cc-r-item">💰 Amount Spent: <strong>$8.60</strong></div>
+            <div class="cc-r-item">📅 Budget: <strong>$7/day</strong></div>
+            <div class="cc-r-item">📊 Objective: <strong>Page Likes</strong></div>
+            <div class="cc-r-item">📍 Platform: <strong>Facebook & Instagram</strong></div>
+          </div>
+          <span class="verified">✓ Ads Manager Verified</span>
+        </div>
+      </div>
+
+      <!-- ═══ EGY 2 ═══ -->
+      <div class="camp-item show" data-country="eg">
+        <div class="camp-card">
+          <div class="cc-header">
+            <div class="cc-flag">🇪🇬</div>
+            <div class="cc-hinfo">
+              <div class="cc-type">Egypt — Page Likes Campaign</div>
+              <div class="cc-name">حملة إعلانية جديدة — تسجيلات الإعجاب بالصفحة</div>
+            </div>
+          </div>
+          <div class="cc-metrics">
+            <div class="cc-m"><div class="cc-val">1,237<span class="u"> like</span></div><div class="cc-key">Follows or Likes</div></div>
+            <div class="cc-m"><div class="cc-val">EGP0.44</div><div class="cc-key">Cost per Follow/Like</div></div>
+            <div class="cc-m"><div class="cc-val">26,231</div><div class="cc-key">Reach</div></div>
+            <div class="cc-m"><div class="cc-val">45,114</div><div class="cc-key">Impressions</div></div>
+          </div>
+        </div>
+        <div class="cc-report">
+          <div class="cc-report-info">
+            <div class="cc-r-item">💰 Amount Spent: <strong>EGP 545.17</strong></div>
+            <div class="cc-r-item">📊 Objective: <strong>Page Likes</strong></div>
+            <div class="cc-r-item">📍 Platform: <strong>Facebook</strong></div>
+          </div>
+          <span class="verified">✓ Ads Manager Verified</span>
+        </div>
+      </div>
+
+      <!-- ═══ EGY 3 Jana Dan ═══ -->
+      <div class="camp-item show" data-country="eg">
+        <div class="camp-card">
+          <div class="cc-header">
+            <div class="cc-flag">🇪🇬</div>
+            <div class="cc-hinfo">
+              <div class="cc-type">Egypt — Page Likes + Awareness</div>
+              <div class="cc-name">Jana Dan — الترويج لصفحة international shop</div>
+            </div>
+          </div>
+          <div class="cc-metrics">
+            <div class="cc-m"><div class="cc-val">622<span class="u"> like</span></div><div class="cc-key">Page Likes (International)</div></div>
+            <div class="cc-m"><div class="cc-val">$0.00664</div><div class="cc-key">Cost per Like</div></div>
+            <div class="cc-m"><div class="cc-val">287,170</div><div class="cc-key">Reach (Awareness)</div></div>
+            <div class="cc-m"><div class="cc-val">$0.057</div><div class="cc-key">Cost per Reach</div></div>
+          </div>
+        </div>
+        <div class="cc-report">
+          <div class="cc-report-info">
+            <div class="cc-r-item">💰 Page Likes Spent: <strong>$4.13</strong></div>
+            <div class="cc-r-item">💰 Awareness Spent: <strong>$16.39</strong></div>
+            <div class="cc-r-item">📊 Objectives: <strong>Likes + Awareness</strong></div>
+            <div class="cc-r-item">📍 Platform: <strong>Facebook & Instagram</strong></div>
+          </div>
+          <span class="verified">✓ Ads Manager Verified</span>
+        </div>
+      </div>
+
+      <!-- ═══ EGY 4 Messaging ═══ -->
+      <div class="camp-item show" data-country="eg">
+        <div class="camp-card">
+          <div class="cc-header">
+            <div class="cc-flag">🇪🇬</div>
+            <div class="cc-hinfo">
+              <div class="cc-type">Egypt — Messaging Campaigns</div>
+              <div class="cc-name">إعلانات ممولة — Messaging Conversations</div>
+            </div>
+          </div>
+          <div class="cc-metrics">
+            <div class="cc-m"><div class="cc-val">43<span class="u"> msg</span></div><div class="cc-key">Conversations — Post 1</div></div>
+            <div class="cc-m"><div class="cc-val">$0.14</div><div class="cc-key">Cost per Conversation</div></div>
+            <div class="cc-m"><div class="cc-val">56<span class="u"> msg</span></div><div class="cc-key">Conversations — New Cairo</div></div>
+            <div class="cc-m"><div class="cc-val">$0.14</div><div class="cc-key">Cost per Conversation</div></div>
+          </div>
+        </div>
+        <div class="cc-report">
+          <div class="cc-report-info">
+            <div class="cc-r-item">💰 Spent Post 1: <strong>$6.00</strong></div>
+            <div class="cc-r-item">💰 Spent New Cairo: <strong>$7.94</strong></div>
+            <div class="cc-r-item">📊 Objective: <strong>Messages</strong></div>
+            <div class="cc-r-item">📍 Platform: <strong>Facebook</strong></div>
+          </div>
+          <span class="verified">✓ Ads Manager Verified</span>
+        </div>
+      </div>
+
+      <!-- ═══ EGY 5 Lustrous ═══ -->
+      <div class="camp-item show" data-country="eg">
+        <div class="camp-card">
+          <div class="cc-header">
+            <div class="cc-flag">🇪🇬</div>
+            <div class="cc-hinfo">
+              <div class="cc-type">Egypt — Messaging + Awareness + Instagram Visits</div>
+              <div class="cc-name">Lustrous Choco — Multi-Campaign</div>
+            </div>
+          </div>
+          <div class="cc-metrics">
+            <div class="cc-m"><div class="cc-val">27<span class="u"> msg</span></div><div class="cc-key">Messaging Conversations</div></div>
+            <div class="cc-m"><div class="cc-val">EGP4.96</div><div class="cc-key">Cost per Conversation</div></div>
+            <div class="cc-m"><div class="cc-val">80,160</div><div class="cc-key">Reach (Awareness)</div></div>
+            <div class="cc-m"><div class="cc-val">381<span class="u"> visit</span></div><div class="cc-key">Instagram Profile Visits</div></div>
+          </div>
+        </div>
+        <div class="cc-report">
+          <div class="cc-report-info">
+            <div class="cc-r-item">💰 Messaging Spent: <strong>EGP 133.94</strong></div>
+            <div class="cc-r-item">💰 Awareness Spent: <strong>EGP 170.20</strong></div>
+            <div class="cc-r-item">💰 Instagram Spent: <strong>EGP 124.50</strong></div>
+            <div class="cc-r-item">📊 CPM Awareness: <strong>EGP 2.12</strong></div>
+            <div class="cc-r-item">📊 Cost/Visit: <strong>EGP 0.33</strong></div>
+            <div class="cc-r-item">📍 Platform: <strong>Facebook & Instagram</strong></div>
+          </div>
+          <span class="verified">✓ Ads Manager Verified</span>
+        </div>
+      </div>
+
+      <!-- ═══ AUSTRALIA ═══ -->
+      <div class="camp-item show" data-country="au">
+        <div class="camp-card">
+          <div class="cc-header">
+            <div class="cc-flag">🇦🇺</div>
+            <div class="cc-hinfo">
+              <div class="cc-type">Australia — Awareness Campaign</div>
+              <div class="cc-name">New Awareness Campaign Australia</div>
+            </div>
+          </div>
+          <div class="cc-metrics">
+            <div class="cc-m"><div class="cc-val">37,860</div><div class="cc-key">Reach</div></div>
+            <div class="cc-m"><div class="cc-val">$0.16</div><div class="cc-key">Cost per Reach</div></div>
+            <div class="cc-m"><div class="cc-val">$6.18</div><div class="cc-key">Amount Spent</div></div>
+            <div class="cc-m"><div class="cc-val">Awareness</div><div class="cc-key">Campaign Objective</div></div>
+          </div>
+        </div>
+        <div class="cc-report">
+          <div class="cc-report-info">
+            <div class="cc-r-item">💰 Amount Spent: <strong>$6.18</strong></div>
+            <div class="cc-r-item">📊 Objective: <strong>Awareness</strong></div>
+            <div class="cc-r-item">📍 Market: <strong>Australia</strong></div>
+          </div>
+          <span class="verified">✓ Ads Manager Verified</span>
+        </div>
+      </div>
+
+    </div><!-- end camps-list -->
+
+    <div style="margin-top:24px;padding:14px 18px;background:rgba(0,200,224,.05);border:1px solid rgba(0,200,224,.12);border-radius:10px;font-size:12px;color:var(--gray);text-align:center;" class="rev">
+      ✔ All campaigns were fully managed by Mariam Hashem Kamal — audience targeting · ad copywriting · design creation · performance analysis · optimization
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="rev"><div class="slbl">خدماتي الأساسية</div><h2>Core Services</h2><p class="ssub">حلول تسويقية متكاملة من الفكرة للنتيجة — كل شيء بيتنفذ باحترافية وبيتقاس بأرقام حقيقية.</p></div>
+    <div class="svc-grid rev">
+      <div class="svc"><div class="svc-n">01</div><div class="svc-ic">📊</div><div class="svc-t">إدارة الإعلانات الممولة (Meta Ads)</div><div class="svc-d">إطلاق حملات باحترافية على Facebook وInstagram بأعلى ROAS وأقل تكلفة ممكنة.</div></div>
+      <div class="svc"><div class="svc-n">02</div><div class="svc-ic">✍️</div><div class="svc-t">كتابة المحتوى التسويقي (Copywriting)</div><div class="svc-d">كتابة كابشنات ونصوص إعلانية جذابة تحفز التفاعل والشراء.</div></div>
+      <div class="svc"><div class="svc-n">03</div><div class="svc-ic">🎨</div><div class="svc-t">تصميمات سوشيال ميديا احترافية</div><div class="svc-d">تصميم بوستات وهوية بصرية متناسقة بـ Canva وPhotoshop.</div></div>
+      <div class="svc"><div class="svc-n">04</div><div class="svc-ic">📈</div><div class="svc-t">تحليل الأداء والتقارير</div><div class="svc-d">تقارير مفصلة وتحليلات تساعد على تحسين النتائج وزيادة الأداء باستمرار.</div></div>
+      <div class="svc"><div class="svc-n">05</div><div class="svc-ic">💬</div><div class="svc-t">إدارة الحسابات والتفاعل</div><div class="svc-d">تنظيم المحتوى، الرد على الرسائل والتعليقات، وبناء مجتمع حقيقي حول البراند.</div></div>
+      <div class="svc"><div class="svc-n">06</div><div class="svc-ic">🎯</div><div class="svc-t">Influencer Marketing</div><div class="svc-d">اختيار وإدارة المؤثرين المناسبين لتحقيق أوسع انتشار وأعلى تحويل.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTS -->
+<section id="certs">
+  <div class="wrap">
+    <div class="rev"><div class="slbl">شهادات معتمدة</div><h2>Certifications</h2><p class="ssub">تدريب حقيقي من مؤسسات عالمية معتمدة — مش بس خبرة، في علم وراها.</p></div>
+    <div class="cert-grid rev">
+      <div class="cert-card">
+        <div class="cert-ic">🎓</div>
+        <div class="cert-org">Udacity × Ministry of ICT Egypt</div>
+        <div class="cert-name">Advanced Digital Marketing Nanodegree</div>
+        <div class="cert-year">February 2022 — Scholarship Sponsored</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-ic">🔍</div>
+        <div class="cert-org">Google × IAB Europe</div>
+        <div class="cert-name">أساسيات التسويق الرقمي من Google</div>
+        <div class="cert-year">September 2021</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-ic">🤖</div>
+        <div class="cert-org">Dubai Future Foundation</div>
+        <div class="cert-name">مليون خبير لأوامر الذكاء الاصطناعي — AI Prompt Engineering</div>
+        <div class="cert-year">Dubai Centre for AI</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-ic">💼</div>
+        <div class="cert-org">ITIDA & EYouth</div>
+        <div class="cert-name">Freelance Training Program (ITIDA Gigs)</div>
+        <div class="cert-year">3 Months Program</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-g">
+      <div class="aphoto rev">
+        <div>📸 أضيفي صورتك الشخصية<br><span style="font-size:11px;opacity:.5">استبدلي النص ده بـ img tag</span></div>
+        <div class="aphoto-ov">
+          <div class="abadge">Founder</div>
+          <div class="aname">Mariam Hashem Kamal</div>
+        </div>
+      </div>
+      <div class="rev">
+        <div class="slbl">من أنا؟ About Me</div>
+        <h2>مريم هاشم كمال</h2>
+        <p class="ssub" style="margin-bottom:16px;max-width:100%">خبيرة تسويق رقمي وإعلانات ممولة على منصات Meta بخبرة تمتد لأكثر من 3 سنوات. شغّلت حملات ناجحة ومربحة في مصر، السعودية، الخليج، أمريكا وأستراليا.</p>
+        <p class="ssub" style="margin-bottom:24px;max-width:100%">أقدّم حلول تسويق متكاملة من التخطيط لتحليل النتائج، مع تركيز خاص على الوصول الدقيق، خفض التكلفة، وزيادة العائد. هدفي: إعلانات تصل للناس الصح، في الوقت الصح، بالرسالة الصح.</p>
+        <div class="atags">
+          <span class="atag">Meta Ads</span>
+          <span class="atag">Social Media Management</span>
+          <span class="atag">Content Creation & Design</span>
+          <span class="atag">Paid Ads & Campaigns</span>
+          <span class="atag">Influencer Marketing</span>
+          <span class="atag">Copywriting</span>
+          <span class="atag">Performance Analysis</span>
+        </div>
+        <div class="anums">
+          <div class="anum"><div class="av">3+</div><div class="al">سنوات خبرة</div></div>
+          <div class="anum"><div class="av">5</div><div class="al">أسواق دولية</div></div>
+          <div class="anum"><div class="av">4</div><div class="al">شهادات معتمدة</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="cbox rev">
+      <div class="slbl" style="justify-content:center;margin-bottom:12px">تواصل معي</div>
+      <h2 style="margin-bottom:10px">هل أنتم مستعدون<br>لتحقيق نتائج تسويقية مذهلة؟</h2>
+      <p style="font-size:15px;color:var(--gray);font-weight:300">أنا مريم هاشم، صانعة حملات ناجحة ومساعدة للعلامات التجارية على النمو.<br>جاهزة أقدملك حلول تسويقية متكاملة — من الفكرة لحد النتائج القابلة للقياس.</p>
+      <div class="cbtns">
+        <a href="https://wa.me/201154520993?text=مرحباً مريم، أريد الاستفسار عن خدمات التسويق" class="bwa" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          واتساب — تواصل فوري
+        </a>
+        <a href="https://www.instagram.com/roma_pro_marketing/" class="bg" target="_blank">Instagram @roma_pro_marketing</a>
+      </div>
+      <div class="cinfo-g">
+        <div class="ci"><div class="ci-l">واتساب</div><div class="ci-v"><a href="https://wa.me/201154520993">+201154520993</a></div></div>
+        <div class="ci"><div class="ci-l">Instagram</div><div class="ci-v"><a href="https://www.instagram.com/roma_pro_marketing/">@roma_pro_marketing</a></div></div>
+        <div class="ci"><div class="ci-l">Website</div><div class="ci-v"><a href="https://mariam-hashem53.my.canva.site" target="_blank">Canva Site</a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="#hero" class="logo">
+    <div class="lcs"><div class="lc r">R</div><div class="lc o">O</div><div class="lc m">M</div><div class="lc a">A</div></div>
+    <span class="logo-sub">Pro Marketing</span>
+  </a>
+  <p class="fc">© 2025 Roma Pro Marketing — Mariam Hashem Kamal. جميع الحقوق محفوظة.</p>
+  <div class="fl">
+    <a href="#campaigns">الحملات</a>
+    <a href="#services">الخدمات</a>
+    <a href="#certs">الشهادات</a>
+    <a href="#contact">تواصل</a>
+  </div>
+</footer>
+
+<script>
+// Nav
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('sc',scrollY>50));
+
+// Reveal
+const ro=new IntersectionObserver(entries=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){setTimeout(()=>e.target.classList.add('vis'),i*70);ro.unobserve(e.target)}
+  });
+},{threshold:.1});
+document.querySelectorAll('.rev').forEach(el=>ro.observe(el));
+
+// Filter campaigns
+function filter(country,btn){
+  document.querySelectorAll('.ctab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.camp-item').forEach(c=>{
+    c.classList.toggle('show', country==='all' || c.dataset.country===country);
+  });
+}
+</script>
+</body>
+</html>
